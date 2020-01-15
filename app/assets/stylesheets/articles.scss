@@ -1,0 +1,149 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+ul.topnav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #0d2757;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+ul.topnav li a:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(236, 236, 236);
+}
+
+ul.topnav li a.active {
+	background-color: #da3c41;
+}
+
+ul.topnav li.right {
+	float: right;
+}
+
+@media screen and (max-width: 480px) {
+
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+}
+
+ul.secondnav {
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style-type: none;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+ul.secondnav li {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	color: #0d2757;
+	margin: 20px;
+}
+
+ul.secondnav li a {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	color: #0d2757;
+	margin: 0px;
+}
+
+ul.secondnav li img {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	color: #0d2757;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+
+@media screen and (max-width: 480px) {
+
+	ul.topnav1 li.right,
+	ul.topnav1 li {
+		float: none;
+	}
+}
+
+
+.main {
+	width: 100%;
+}
+
+.main div {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.main div h1 {
+	text-align: center;
+}
+
+.main div h1.show{
+	text-align: left;
+	font-size: 40px;
+}
+
+.main div div {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left
+}
+
+.main div div div {
+	width: 200px;
+	margin: 0px;
+	padding: 10px;
+}
+
+.main div div div a {
+	box-shadow: 0 10px 10px #666666;
+}
+
+.main div div div a img {
+	height: 180px;
+	width: 200px;
+}
+
+
+.top {
+	width: 100%;
+	background-color: #61c248;
+	text-align: center;
+}
+
+.top div {
+	width: 80%;
+	margin: auto;
+}
+
+.top div img {
+	vertical-align: bottom;
+	width: 500px;
+}

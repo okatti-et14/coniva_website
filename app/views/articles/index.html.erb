@@ -1,0 +1,36 @@
+<div class="top">
+  <div><%= image_tag 'top.jpg'%></div>
+</div>
+
+
+
+
+
+<div class="main">
+  <div>
+    <p id="notice"><%= notice %></p>
+
+    <h1>サークルからのお知らせ</h1>
+    <div>
+      <% @articles.each do |article| %>
+      <div>
+        <%= link_to article do %>
+        <%= image_tag article.image %>
+        <%= article.created_at.strftime('%Y年%m月%d日 %H:%M') %>
+        <br>
+        <font size="2"><%= article.title %></font>
+        <!--<td><%= article.memo %></td>-->
+
+        <!--<td><%= link_to 'あ', article %></td>
+        <td><%= link_to 'あ', edit_article_path(article) %></td>
+        <td><%= link_to 'あ', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+
+        <% end %>
+      </div>
+      <!--<%= link_to '編集', edit_article_path(article) %>articles_path-->
+      <% end %>
+    </div>
+
+    <%= link_to '新規作成', new_article_path %>
+  </div>
+</div>

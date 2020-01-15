@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%= favicon_link_tag() %>
+  <meta http-equiv="content-language" content="ja">
+  <meta name="google" content="notranslate" />
+  <title>IbaConivaHp</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <ul class="topnav"><li class="right"><a href="#about">
+            <font size="2">お問い合わせ</font></a></li>
+      </ul>
+      <div>
+        <ul class="secondnav">
+          <li><%= link_to articles_path do %><%= image_tag 'favicon.ico',:size =>'35x35'%></a><% end %></li>
+          <li><a href="#news"><font size="4"><b>記事</b></font></a></li>
+          <li><a href="#contact"><font size="4"><b>アクセス</b></font></a></li>
+          <li><a href="https://twitter.com/ibadaichuunan"><font size="4"><b>Twitter</b></font></a></li>
+          <li><a href="https://www.youtube.com/channel/UCQ4fOacob1RE91xH5-ulZdQ?view_as=subscriber"><font size="4"><b>YouTube</b></font></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <%= yield %>
+</body>
+
+</html>
