@@ -1,5 +1,7 @@
 <div class="top">
-  <div><%= image_tag "top.jpg" %></div>
+  <div><%= image_tag "top.jpg" %> <div>茨城大学<br>中南米音楽<br>研究会</div>
+  </div>
+
 </div>
 
 
@@ -13,7 +15,7 @@
     <%= link_to "ログアウト", login_foodandfood_path, method: :delete %>
     <%= link_to "新規作成", new_article_path %>
     <% end %>
-    <h1>サークルからのお知らせ</h1>
+    <h1 class="main">サークルからのお知らせ</h1>
     <div>
       <% @articles.each do |article| %>
       <div>
