@@ -100,11 +100,11 @@ ul.secondnav li img {
 	margin: 0 auto;
 }
 
-.main div h1 {
+.main div h1.main {
 	text-align: center;
 }
 
-.main div h1.show{
+.main div h1.show {
 	text-align: left;
 	font-size: 40px;
 }
@@ -136,14 +136,32 @@ ul.secondnav li img {
 	width: 100%;
 	background-color: #61c248;
 	text-align: center;
+	height: auto;
 }
 
 .top div {
 	width: 80%;
 	margin: auto;
+	height: auto;
+	position: relative;
 }
 
 .top div img {
 	vertical-align: bottom;
 	width: 500px;
+}
+
+.top div div {
+	width: 15%;
+	background-color: #228b05;
+	color: #ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	height: 150px;
+	line-height: 1.125;
+	padding: 30px;
+	box-shadow: 5px 5px 5px #00220b;
+	position: absolute;
+	bottom: 50px;
+	left: 280px;
 }
