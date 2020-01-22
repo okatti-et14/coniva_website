@@ -5,7 +5,7 @@
     <h1 class="show">
       <%= @article.title %>
     </h1>
-    <%= image_tag @article.image.variant(resize_to_limit: [400, 400]) %>
+    <%= image_tag @article.image %>
     <br><br>
     <font size="2"><%= @article.memo %></font>
     <br>
