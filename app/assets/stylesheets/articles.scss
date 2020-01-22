@@ -93,33 +93,44 @@ ul.secondnav li img {
 
 .main {
 	width: 100%;
+	padding: 2%;
 }
 
 .main div {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 2%;
 }
 
 .main div h1.main {
 	text-align: center;
 }
 
-.main div h1.show {
-	text-align: left;
-	font-size: 40px;
+h1.show {
+	font-size: 3.8em;
+    border-bottom: 1px solid #ddd;
+	padding-bottom: .1em;
+	font-weight: 700;
+    line-height: 1.5;
 }
 
+
 .main div div {
-	width: 70%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left
 }
 
+.main div img{
+	width: 40%;
+}
+
 .main div div div {
-	width: 200px;
+	width: 210px;
 	margin: 0px;
-	padding: 10px;
+	padding: 12px;
 }
 
 .main div div div a {
@@ -128,7 +139,7 @@ ul.secondnav li img {
 
 .main div div div a img {
 	height: 180px;
-	width: 200px;
+	width: 210px;
 }
 
 
