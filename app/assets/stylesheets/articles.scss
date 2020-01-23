@@ -1,6 +1,8 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+	background-color: rgb(240, 240, 240);
+	color: #333;
+	margin: 0px; }
+
 ul.topnav {
 	overflow: hidden;
 	margin: 0;
@@ -32,14 +34,6 @@ ul.topnav li a.active {
 
 ul.topnav li.right {
 	float: right;
-}
-
-@media screen and (max-width: 480px) {
-
-	ul.topnav li.right,
-	ul.topnav li {
-		float: none;
-	}
 }
 
 ul.secondnav {
@@ -97,55 +91,66 @@ p {
 
 .main {
 	width: 100%;
-	padding: 2%;
+	padding: 2% 0% 2%;
 }
 
-.main div {
+ .contents {
 	width: 50%;
 	margin: 0 auto;
 	background-color: #ffffff;
-	padding: 2%;
+	padding: 1px 2% 2%;
 }
 
-.main div h1.main {
+
+.contents div {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	padding: 0%;
+}
+
+.contents img{
+	width: 40%;
+}
+
+.contents div div {
+	width: 23%;
+	margin: 0px;
+	padding: 1%;
+}
+
+.contents div div a {
+	box-shadow: 0 10px 10px #666666;
+}
+
+.contents div div a img {
+	height: 180px;
+	width: 100%;
+}
+
+.contents div div a p {
+	margin: 0px;
+}
+
+p.datetime {
+	padding: 0px 0px 5px;
+	font-size: xx-small;
+	color:  #666666;
+}
+
+h1.main {
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1.show {
-	font-size: 3.8em;
     border-bottom: 1px solid #ddd;
 	padding-bottom: .1em;
 	font-weight: 700;
     line-height: 1.5;
 }
-
-
-.main div div {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	text-align: left
-}
-
-.main div img{
-	width: 40%;
-}
-
-.main div div div {
-	width: 210px;
-	margin: 0px;
-	padding: 12px;
-}
-
-.main div div div a {
-	box-shadow: 0 10px 10px #666666;
-}
-
-.main div div div a img {
-	height: 180px;
-	width: 210px;
-}
-
 
 .top {
 	width: 100%;
@@ -155,7 +160,7 @@ h1.show {
 }
 
 .top div {
-	width: 80%;
+	width: 50%;
 	margin: auto;
 	height: auto;
 	position: relative;
@@ -164,10 +169,11 @@ h1.show {
 .top div img {
 	vertical-align: bottom;
 	width: 500px;
+	margin: auto;
 }
 
 .top div div {
-	width: 15%;
+	width: 250px;
 	background-color: #228b05;
 	color: #ffffff;
 	font-size: 1.8rem;
@@ -178,5 +184,9 @@ h1.show {
 	box-shadow: 5px 5px 5px #00220b;
 	position: absolute;
 	bottom: 50px;
-	left: 280px;
 }
+
+
+
+
+
