@@ -5,7 +5,7 @@
   <%= favicon_link_tag() %>
   <meta http-equiv="content-language" content="ja">
   <meta name="google" content="notranslate" />
-  <title>IbaConivaHp</title>
+  <title><%= page_title %></title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag "application", media: "screen", 'data-turbolinks-track': "reload" %>
@@ -20,7 +20,7 @@
       </ul>
       <ul class="secondnav">
         <li><%= link_to root_path do %><%= image_tag "favicon.ico"%></a><% end %></li>
-        <li><%= link_to static_pages_overview_path do %>サークル概要<% end %></li>
+        <li><%= link_to static_pages_about_path do %>サークル概要<% end %></li>
         <li><a href="https://twitter.com/ibadaichuunan">Twitter</a></li>
         <li><a href="https://www.youtube.com/channel/UCQ4fOacob1RE91xH5-ulZdQ?view_as=subscriber">YouTube</a></li>
       </ul>
