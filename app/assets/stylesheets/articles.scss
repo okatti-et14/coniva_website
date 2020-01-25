@@ -1,74 +1,83 @@
 body {
 	background-color: rgb(240, 240, 240);
 	color: #333;
-	margin: 0px; }
+	margin: 0px;
+	font-size: 10px;
+}
 
-ul.topnav {
+a {
+	text-decoration: none;
+}
+
+.topnav {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 	background-color: #0d2757;
 }
 
-ul.topnav li {
+.topnav li {
 	float: left;
 }
 
-ul.topnav li a {
+.topnav li a {
 	display: block;
-	padding: 14px 16px;
-	text-align: center;
+	padding: 0.5rem 0.5rem;
 	text-decoration: none;
 	color: white;
 }
 
-ul.topnav li a:hover {
+.topnav  a:hover {
 	color: rgb(0, 0, 0);
 	background-color: rgb(236, 236, 236);
 }
 
-ul.topnav li a.active {
-	background-color: #da3c41;
-}
-
-ul.topnav li.right {
+.topnav li.right {
 	float: right;
 }
 
-ul.secondnav {
+.secondnav {
 	display: block;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: auto;
+	padding: 0.5rem 0rem 0.5rem;
 	list-style-type: none;
 	background-color: #ffffff;
 	text-align: center;
 }
 
-ul.secondnav li {
+.secondnav li {
+	white-space: nowrap;
 	display: inline-block;
-	padding: 0;
 	text-align: center;
 	text-decoration: none;
 	color: #0d2757;
-	margin: 20px;
+	margin: 0%;
+	height: auto;
+	width: auto;
+	font-weight: bold;
+	font-size: 1rem;
 }
 
-ul.secondnav li a {
-	display: inline-block;
-	padding: 0;
-	text-align: center;
-	text-decoration: none;
+.secondnav a {
+	padding: 0.5rem 1.5rem 0.5rem;
 	color: #0d2757;
 	margin: 0px;
 }
 
-ul.secondnav li img {
-	display: inline-block;
+.secondnav a:hover{
+	background-color: #ffffff;
+    color: rgb(0, 255, 55);
+    text-decoration: none; 
+}
+
+.secondnav img {
+	height: 2rem;
+	width: auto;
 	padding: 0;
-	text-align: center;
 	text-decoration: none;
 	color: #0d2757;
 	margin: 0px;
@@ -76,29 +85,27 @@ ul.secondnav li img {
 }
 
 
-@media screen and (max-width: 480px) {
-
-	ul.topnav1 li.right,
-	ul.topnav1 li {
-		float: none;
-	}
-}
 
 p {
 	font-family: 'Lato';
-	font-size: x-small;
+	font-size: 1rem;
+	color: rgb(66, 66, 66);
+}
+
+a:hover{
+	background-color: rgb(226, 226, 226);
 }
 
 .main {
 	width: 100%;
-	padding: 2% 0% 2%;
+	padding: 1.5rem 0rem 1.5rem;
 }
 
- .contents {
-	width: 50%;
+.contents {
+	width: 40rem;
 	margin: 0 auto;
 	background-color: #ffffff;
-	padding: 1px 2% 2%;
+	padding: 0.1rem 2rem 2rem;
 }
 
 
@@ -107,17 +114,17 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
-	padding: 0%;
+	padding: 0rem;
 }
 
-.contents img{
-	width: 40%;
+.contents img {
+	width: 15rem;
 }
 
 .contents div div {
-	width: 23%;
-	margin: 0px;
-	padding: 1%;
+	width: 9.2rem;
+	margin: 0rem;
+	padding: 0.4rem;
 }
 
 .contents div div a {
@@ -125,7 +132,7 @@ p {
 }
 
 .contents div div a img {
-	height: 180px;
+	height: 6.9rem;
 	width: 100%;
 }
 
@@ -133,10 +140,15 @@ p {
 	margin: 0px;
 }
 
-p.datetime {
+.datetime {
 	padding: 0px 0px 5px;
-	font-size: xx-small;
-	color:  #666666;
+	font-size: 0.5rem;
+	color: #666666;
+}
+
+
+h1 {
+	font-size: 1.5rem;
 }
 
 h1.main {
@@ -146,10 +158,10 @@ h1.main {
 }
 
 h1.show {
-    border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	padding-bottom: .1em;
 	font-weight: 700;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 .top {
@@ -160,7 +172,7 @@ h1.show {
 }
 
 .top div {
-	width: 50%;
+	width: 35rem;
 	margin: auto;
 	height: auto;
 	position: relative;
@@ -168,25 +180,31 @@ h1.show {
 
 .top div img {
 	vertical-align: bottom;
-	width: 500px;
+	width: 20rem;
 	margin: auto;
 }
 
 .top div div {
-	width: 250px;
+	width: 8rem;
 	background-color: #228b05;
 	color: #ffffff;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: bold;
-	height: 150px;
-	line-height: 1.125;
-	padding: 30px;
-	box-shadow: 5px 5px 5px #00220b;
+	height: 5rem;
+	line-height: 1.7rem;
+	padding: 1rem;
+	box-shadow: 0.2rem 0.2rem 0.2rem #00220b;
 	position: absolute;
-	bottom: 50px;
+	bottom: 3rem;
 }
 
+@media screen and (max-width: 1056x) {
 
-
-
-
+	.contents {
+		width: 40rem;
+		margin: 0 auto;
+		background-color: #ffffff;
+		padding: 0rem 2rem 2rem;
+	}
+	
+}
