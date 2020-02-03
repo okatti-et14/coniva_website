@@ -7,7 +7,7 @@
     </h1>
     <%= image_tag aricle_image_select(@article) %>
     <br><br>
-    <font size="2"><%= @article.memo %></font>
+    <font size="2"><%= simple_format h @article.memo %></font>
     <br>
     <% if logged_in? %>
     <%= link_to "編集", edit_article_path(@article) %>
