@@ -1,7 +1,6 @@
 <div class="top">
   <div>
     <%= image_tag "top.jpg" %>
-    <div>茨城大学<br>中南米音楽<br>研究会</div>
   </div>
 </div>
 <div class="main">
@@ -17,8 +16,10 @@
       <div class="article">
         <%= link_to article do %>
         <%= image_tag aricle_image_select(article) %>
-        <p class="datetime"><%= article.created_at.strftime("%Y/%m/%d/ %H:%M") %></p>
+        <div>
         <p><%= article.title %></p>
+        <p class="datetime"><%= article.created_at.strftime("%Y/%m/%d/ %H:%M") %></p>
+        </div>
         <% end %>
       </div>
       <% end %>

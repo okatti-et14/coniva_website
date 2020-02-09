@@ -1,318 +1,615 @@
-body {
-	background-color: rgb(240, 240, 240);
-	color: #333;
-	margin: 0px;
-	font-size: 10px;
+@media screen and (max-width: 500px) {
+	body {
+		background-color: rgb(240, 240, 240);
+		color: #333;
+		margin: 0px;
+		font-size: 10px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.topnav {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		background-color: #0d2757;
+	}
+
+	.topnav li {
+		float: left;
+	}
+
+	.topnav li p {
+		color: white;
+		font-size: 10px;
+		margin: 0;
+
+		padding: 0.5rem 0.5rem;
+	}
+
+	.topnav li a {
+		display: block;
+		padding: 0.5rem 0.5rem;
+		text-decoration: none;
+		color: white;
+	}
+
+	.topnav a:hover {
+		color: rgb(0, 0, 0);
+		background-color: rgb(236, 236, 236);
+	}
+
+	.topnav li.right {
+		float: right;
+	}
+
+	.secondnav {
+		display: block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		padding: 0.5rem 0rem 0.5rem;
+		list-style-type: none;
+		background-color: #ffffff;
+		text-align: center;
+	}
+
+	.secondnav li {
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		color: #0d2757;
+		margin: 0%;
+		height: auto;
+		width: auto;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	.secondnav a {
+		padding: 0.5rem 0.5rem 0.5rem;
+		color: #0d2757;
+		margin: 0px;
+	}
+
+	.secondnav a:hover {
+		background-color: #ffffff;
+		color: rgb(0, 255, 55);
+		text-decoration: none;
+	}
+
+	.secondnav img {
+		height: 2rem;
+		width: auto;
+		padding: 0;
+		text-decoration: none;
+		color: #0d2757;
+		margin: 0px;
+		vertical-align: bottom;
+	}
+
+	p {
+		font-family: 'Lato';
+		font-size: 1rem;
+		color: rgb(66, 66, 66);
+	}
+
+	a:hover {
+		background-color: rgb(226, 226, 226);
+	}
+
+	.main {
+		width: 100%;
+		padding: 0rem 0rem 0rem;
+	}
+
+	.contents {
+		width: 96%;
+		margin: 0rem;
+		background-color: #ffffff;
+		padding: 2% 2% 2%;
+	}
+
+	.contents div {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+		padding: 0rem;
+	}
+
+	.contents img {
+		width: 15rem;
+	}
+
+	.contents div div {
+
+		width: 100%;
+		margin: 0rem;
+		padding: 0.2rem;
+	}
+
+	.contents div div a {
+		box-shadow: 0 2px 2px #666666;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+
+		border: solid 0.1px #666666;
+
+	}
+
+	.contents div div a img {
+		height: 4rem;
+		width: 4rem;
+	}
+
+	.contents div div a p {
+		height: 80%;
+		margin: 0px;
+	}
+
+	.contents div div a div {
+		width: 80%;
+		display: block;
+		padding: 0px;
+	}
+
+	.datetime {
+		height: 20%;
+		padding: 0px 0px 5px;
+		font-size: 0.5rem;
+		color: #666666;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h1.main {
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1.show {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: .1em;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	.top {
+		width: 100%;
+		background-color: #61c248;
+		text-align: center;
+		height: auto;
+	}
+
+	.top div {
+		width: 100%;
+		margin: auto;
+		height: auto;
+	}
+
+	.top div img {
+		vertical-align: bottom;
+		width: 60%;
+		margin: auto;
+	}
+
+	#sosyal {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.facebook {
+		background-color: #2e4a88;
+		box-shadow: 0 0.1rem 0 #1B3D82;
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 0.5rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.facebook:hover {
+		background-color: #354F84;
+	}
+
+	.facebook:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #1B3D82;
+	}
+
+	.twitter {
+		background-color: #008DDE;
+		box-shadow: 0 0.1rem 0 #0078BD;
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 0.5rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.twitter:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #0078BD;
+	}
+
+	.twitter:hover {
+		background-color: #1397D8;
+	}
+
+	.line {
+		background-color: #35de00;
+		box-shadow: 0 0.1rem 0 #2dc715;
+
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 0.5rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.line:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #2dc715;
+	}
+
+	.line:hover {
+		background-color: #35de00ed;
+	}
+
+	.slack {
+		background-color: #9401ff;
+		box-shadow: 0 0.1rem 0 #720cb9;
+
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 0.5rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.slack:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #720cb9;
+	}
+
+	.slack:hover {
+		background-color: #9401ffe8;
+	}
 }
 
-a {
-	text-decoration: none;
-}
 
-.topnav {
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	background-color: #0d2757;
-}
+@media screen and (min-width: 501px) {
+	body {
+		background-color: rgb(240, 240, 240);
+		color: #333;
+		margin: 0px;
+		font-size: 10px;
+	}
 
-.topnav li {
-	float: left;
-}
+	a {
+		text-decoration: none;
+	}
 
-.topnav li a {
-	display: block;
-	padding: 0.5rem 0.5rem;
-	text-decoration: none;
-	color: white;
-}
+	.topnav {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		background-color: #0d2757;
+	}
 
-.topnav a:hover {
-	color: rgb(0, 0, 0);
-	background-color: rgb(236, 236, 236);
-}
+	.topnav div {
+		width: 40rem;
+		margin: 0 auto;
+	}
 
-.topnav li.right {
-	float: right;
-}
+	.topnav li {
+		float: left;
+	}
 
-.secondnav {
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: auto;
-	padding: 0.5rem 0rem 0.5rem;
-	list-style-type: none;
-	background-color: #ffffff;
-	text-align: center;
-}
+	.topnav li p {
+		color: white;
+		font-size: 16px;
+		margin: 0;
+		padding: 0.5rem 0rem;
+	}
 
-.secondnav li {
-	white-space: nowrap;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	color: #0d2757;
-	margin: 0%;
-	height: auto;
-	width: auto;
-	font-weight: bold;
-	font-size: 1rem;
-}
+	.topnav li a {
+		display: block;
+		padding: 0.5rem 0rem;
+		text-decoration: none;
+		color: white;
+	}
 
-.secondnav a {
-	padding: 0.5rem 1.5rem 0.5rem;
-	color: #0d2757;
-	margin: 0px;
-}
+	.topnav a:hover {
+		color: rgb(0, 0, 0);
+		background-color: rgb(236, 236, 236);
+	}
 
-.secondnav a:hover {
-	background-color: #ffffff;
-	color: rgb(0, 255, 55);
-	text-decoration: none;
-}
+	.topnav li.right {
+		float: right;
+	}
 
-.secondnav img {
-	height: 2rem;
-	width: auto;
-	padding: 0;
-	text-decoration: none;
-	color: #0d2757;
-	margin: 0px;
-	vertical-align: bottom;
-}
+	.secondnav {
+		display: block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		padding: 0.5rem 0rem 0.5rem;
+		list-style-type: none;
+		background-color: #ffffff;
+		text-align: center;
+	}
 
+	.secondnav li {
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		color: #0d2757;
+		margin: 0%;
+		height: auto;
+		width: auto;
+		font-weight: bold;
+		font-size: 1rem;
+	}
 
+	.secondnav a {
+		padding: 0.5rem 3rem 0.5rem;
+		color: #0d2757;
+		margin: 0px;
+	}
 
-p {
-	font-family: 'Lato';
-	font-size: 1rem;
-	color: rgb(66, 66, 66);
-}
+	.secondnav a:hover {
+		background-color: #ffffff;
+		color: rgb(0, 255, 55);
+		text-decoration: none;
+	}
 
-a:hover {
-	background-color: rgb(226, 226, 226);
-}
+	.secondnav img {
+		height: 2rem;
+		width: auto;
+		padding: 0;
+		text-decoration: none;
+		color: #0d2757;
+		margin: 0px;
+		vertical-align: bottom;
+	}
 
-.main {
-	width: 100%;
-	padding: 1.5rem 0rem 1.5rem;
-}
+	p {
+		font-family: 'Lato';
+		font-size: 1rem;
+		color: rgb(66, 66, 66);
+	}
 
-.contents {
-	width: 40rem;
-	margin: 0 auto;
-	background-color: #ffffff;
-	padding: 0.1rem 2rem 2rem;
-}
+	a:hover {
+		background-color: rgb(226, 226, 226);
+	}
 
-
-.contents div {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	text-align: left;
-	padding: 0rem;
-}
-
-.contents img {
-	width: 15rem;
-}
-
-.contents div div {
-	width: 9.2rem;
-	margin: 0rem;
-	padding: 0.4rem;
-}
-
-.contents div div a {
-	box-shadow: 0 10px 10px #666666;
-}
-
-.contents div div a img {
-	height: 6.9rem;
-	width: 100%;
-}
-
-.contents div div a p {
-	margin: 0px;
-}
-
-.datetime {
-	padding: 0px 0px 5px;
-	font-size: 0.5rem;
-	color: #666666;
-}
-
-
-h1 {
-	font-size: 1.5rem;
-}
-
-h1.main {
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
-}
-
-h1.show {
-	border-bottom: 1px solid #ddd;
-	padding-bottom: .1em;
-	font-weight: 700;
-	line-height: 1.5;
-}
-
-.top {
-	width: 100%;
-	background-color: #61c248;
-	text-align: center;
-	height: auto;
-}
-
-.top div {
-	width: 35rem;
-	margin: auto;
-	height: auto;
-	position: relative;
-}
-
-.top div img {
-	vertical-align: bottom;
-	width: 20rem;
-	margin: auto;
-}
-
-.top div div {
-	width: 8rem;
-	background-color: #228b05;
-	color: #ffffff;
-	font-size: 1.5rem;
-	font-weight: bold;
-	height: 5rem;
-	line-height: 1.7rem;
-	padding: 1rem;
-	box-shadow: 0.2rem 0.2rem 0.2rem #00220b;
-	position: absolute;
-	bottom: 3rem;
-}
-
-#sosyal {
-	
-	width: 44rem;
-	margin: 50px auto;
-}
-
-.facebook {
-	background-color: #2e4a88;
-	box-shadow: 0 0.1rem 0 #1B3D82;
-
-	display: inline;
-	position: relative;
-	font-family: Arial;
-	font-size: 1rem;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-}
-
-.facebook:hover {
-	background-color: #354F84;
-}
-
-.facebook:active {
-	top: 1rem;
-	box-shadow: 0 1rem 0 #1B3D82;
-}
-
-.twitter {
-	background-color: #008DDE;
-	box-shadow: 0 0.1rem 0 #0078BD;
-
-	display: inline;
-	position: relative;
-	font-family: Arial;
-	font-size: 1rem;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-}
-
-.twitter:active {
-	top: 1rem;
-	box-shadow: 0 1rem 0 #0078BD;
-}
-
-.twitter:hover {
-	background-color: #1397D8;
-}
-
-.line {
-	background-color: #35de00;
-	box-shadow: 0 0.1rem 0 #2dc715;
-
-	display: inline;
-	position: relative;
-	font-family: Arial;
-	font-size: 1rem;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-}
-
-.line:active {
-	top: 1rem;
-	box-shadow: 0 1rem 0 #2dc715;
-}
-
-.line:hover {
-	background-color: #35de00ed;
-}
-
-.slack {
-	background-color: #9401ff;
-	box-shadow: 0 0.1rem 0 #720cb9;
-
-	display: inline;
-	position: relative;
-	font-family: Arial;
-	font-size: 1rem;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-}
-
-.slack:active {
-	top: 1rem;
-	box-shadow: 0 1rem 0 #720cb9;
-}
-
-.slack:hover {
-	background-color: #9401ffe8;
-}
-
-
-
-@media screen and (max-width: 1056x) {
+	.main {
+		width: 100%;
+		padding: 1.5rem 0rem 1.5rem;
+	}
 
 	.contents {
 		width: 40rem;
 		margin: 0 auto;
 		background-color: #ffffff;
-		padding: 0rem 2rem 2rem;
+		padding: 0.1rem 2rem 2rem;
 	}
 
+	.contents div {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+		padding: 0rem;
+	}
+
+	.contents img {
+		width: 15rem;
+	}
+
+	.contents div div {
+		width: 9.2rem;
+		margin: 0rem;
+		padding: 0.4rem;
+	}
+
+	.contents div div a {
+		box-shadow: 0 10px 10px #666666;
+	}
+
+	.contents div div a img {
+		height: 6.9rem;
+		width: 100%;
+	}
+
+	.contents div div a p {
+		margin: 0px;
+	}
+
+	.contents div div a div {
+		display: block;
+		padding: 0px;
+	}
+
+	.datetime {
+		padding: 0px 0px 5px;
+		font-size: 0.5rem;
+		color: #666666;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h1.main {
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1.show {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: .1em;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	.top {
+		width: 100%;
+		background-color: #61c248;
+		text-align: center;
+		height: auto;
+	}
+
+	.top div {
+		width: 35rem;
+		margin: auto;
+		height: auto;
+	}
+
+	.top div img {
+		vertical-align: bottom;
+		width: 20rem;
+		margin: auto;
+	}
+
+	#sosyal {
+
+		width: 44rem;
+		margin: 50px auto;
+	}
+
+	.facebook {
+		background-color: #2e4a88;
+		box-shadow: 0 0.1rem 0 #1B3D82;
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.facebook:hover {
+		background-color: #354F84;
+	}
+
+	.facebook:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #1B3D82;
+	}
+
+	.twitter {
+		background-color: #008DDE;
+		box-shadow: 0 0.1rem 0 #0078BD;
+
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.twitter:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #0078BD;
+	}
+
+	.twitter:hover {
+		background-color: #1397D8;
+	}
+
+	.line {
+		background-color: #35de00;
+		box-shadow: 0 0.1rem 0 #2dc715;
+
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.line:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #2dc715;
+	}
+
+	.line:hover {
+		background-color: #35de00ed;
+	}
+
+	.slack {
+		background-color: #9401ff;
+		box-shadow: 0 0.1rem 0 #720cb9;
+
+		display: inline;
+		position: relative;
+		font-family: Arial;
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.slack:active {
+		top: 1rem;
+		box-shadow: 0 1rem 0 #720cb9;
+	}
+
+	.slack:hover {
+		background-color: #9401ffe8;
+	}
 }
