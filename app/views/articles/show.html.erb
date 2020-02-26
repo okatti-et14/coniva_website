@@ -3,6 +3,7 @@
     <p id="notice"><%= notice %></p>
     <% @page_title = "#{@article.title}" %>
     <h1 class="show">
+      <div class="datetime"><%= @article.created_at.strftime("%Y/%m/%d/ %H:%M") %></div>
       <%= @article.title %>
     </h1>
     <%= image_tag aricle_image_select(@article) %>
@@ -14,6 +15,9 @@
     <%= link_to "削除", @article, method: :delete, data: { confirm: "消しちゃうよ?????" } %>
     <% end %>
     <br>
+    <%= link_to "新しい記事", @article.get_next_article if @article.get_next_article %>
+    <%= link_to "古い記事", @article.get_previous_article if @article.get_previous_article %>
+    <br><br>
     <%= link_to "一覧へ戻る", articles_path %>
   </div>
   <div id='sosyal'>
