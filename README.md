@@ -3,11 +3,13 @@
 
 https://www.coniva.net/
 
-# 使用しているもの
-Rails 6.0.2.1
+# 開発環境
+Rails 6.0.3
 
 ruby 2.6.5
 
 Windows10 home
 
 Ubuntu 18.04 LTS
+
+macOS Catalina
