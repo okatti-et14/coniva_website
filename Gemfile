@@ -25,6 +25,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'image_processing', '~> 1.2'
 gem 'ruby-vips'
 
+gem 'slack-notifier'
 
 gem "google-cloud-storage", "~> 1.8", require: false
 
