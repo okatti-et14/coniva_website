@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.save
         notifier = Slack::Notifier.new(Rails.application.config.slack_webhook_url)
-        notifier.ping("「" + @article.title + "」が新しく投稿されのだ")
+        notifier.ping("「" + @article.title + "」が新しく投稿されたのだ")
         format.html { redirect_to @article, notice: "Article was successfully created." }
         format.json { render :show, status: :created, location: @article }
       else
@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.update(article_params)
         notifier = Slack::Notifier.new(Rails.application.config.slack_webhook_url)
-        notifier.ping("「" + @article.title + "」が編集されのだ")
+        notifier.ping("「" + @article.title + "」が編集されたのだ")
         format.html { redirect_to @article, notice: "Article was successfully updated." }
         format.json { render :show, status: :ok, location: @article }
       else
@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
     @article.destroy
     respond_to do |format|
       notifier = Slack::Notifier.new(Rails.application.config.slack_webhook_url)
-      notifier.ping("「" + @article.title + "」が削除されのだ")
+      notifier.ping("「" + @article.title + "」が削除されたのだ")
       format.html { redirect_to articles_url, notice: "Article was successfully destroyed." }
       format.json { head :no_content }
     end
